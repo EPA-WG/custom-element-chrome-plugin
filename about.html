@@ -1,0 +1,37 @@
+<html>
+<head>
+    <style>
+        body{ min-width: 16rem;}
+        var{color: navy; font-family: monospace; font-weight: bold; font-size: large; font-style: normal; text-decoration: none;}</style>
+</head>
+<body>
+<h3>@epa-wg/custom-element</h3>
+<p>
+    <b>Transformation</b> tab of DOM inspector shows:
+</p>
+<ul>
+    <li><var>current</var> selected in DOM inspector node</li>
+    <li>Parent <var>customElement</var></li>
+    <li>Declarative Custom Element <var>dce</var> for custom element ^^</li>
+    <li><var>current</var> selected in DOM inspector node</li>
+</ul>
+<p>
+    Data source for transformation:
+</p>
+<ul>
+    <li><var>xml-as-object</var> for easier inspection </li>
+    <li><var>xml-string</var> as a string</li>
+    <li><var>xslt</var> as a string</li>
+</ul>
+<h3>Debugging</h3>
+<var>xml-string</var> and <var>xslt</var> can be saved to file via for "copy string contents"
+into clipboard. <br/>
+The XSLT debugger from your favorite IDE can set the breakpoints
+withing those files and run transformation under debugger.
+<br/>
+<br/>
+More info on <a href="https://github.com/EPA-WG/custom-element-chrome-plugin">GitHub repo</a>
+
+<script src="popup.js"></script>
+</body>
+</html>

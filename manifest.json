@@ -1,0 +1,16 @@
+{
+  "name": "@epa-wg/custom-element",
+  "description": "devtools helper for `@epa-wg/custom-element` as 'Transformation' tab of DOM inspector ",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "devtools_page": "devtools.html",
+  "action": {
+    "default_popup": "about.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions":["declarativeContent","activeTab"]
+}
