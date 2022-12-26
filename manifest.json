@@ -15,7 +15,5 @@
         "128": "DCE-128.png"
     },
     "permissions": [
-        "declarativeContent",
-        "activeTab"
     ]
 }

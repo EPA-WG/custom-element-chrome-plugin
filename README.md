@@ -41,8 +41,8 @@ run transformation under debugger.
 * reference in custom-element demo 
 * custom-element next version
 
-[github-image]:   https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg
 [git-url]:        https://github.com/EPA-WG/custom-element-chrome-plugin
 [dce-url]:        https://github.com/EPA-WG/custom-element
 [demo-url]:       https://unpkg.com/@epa-wg/custom-element@0.0/index.html
 [privacy-url]:    https://github.com/EPA-WG/custom-element-chrome-plugin/blob/main/Privacy.md
+[github-image]:   https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg
