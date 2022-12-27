@@ -33,10 +33,10 @@ Declarative Custom Element `dce` for custom element ^^
 The XSLT debugger from your favorite IDE can set the breakpoints withing those files and 
 run transformation under debugger.
 
+![screenshot](./screenshot.png)
 
 # todo
 * author
-* screenshot
 * video
 * reference in custom-element demo 
 * custom-element next version
