@@ -1,7 +1,7 @@
 {
     "name": "@epa-wg/custom-element",
     "description": "devtools helper for `@epa-wg/custom-element`, a Declarative Custom Element as 'Transformation' tab of DOM inspector ",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 3,
     "devtools_page": "devtools.html",
     "action": {
@@ -14,6 +14,11 @@
         "48": "DCE-48.png",
         "128": "DCE-128.png"
     },
+    "options_ui": {
+        "page": "about.html",
+        "open_in_tab": false
+    },
     "permissions": [
+        "storage"
     ]
 }

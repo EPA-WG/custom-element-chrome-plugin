@@ -1,37 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>Declarative Custom Element devtools plugin - options</title>
     <style>
-        body{ min-width: 16rem;}
-        var{color: navy; font-family: monospace; font-weight: bold; font-size: large; font-style: normal; text-decoration: none;}</style>
+        body{ min-width: 20rem;}
+        var{color: darkmagenta; font-family: monospace; font-weight: bold; font-size: medium; font-style: normal; text-decoration: none;}
+        legend{ padding: 1rem 0 0.5rem 0; }
+        fieldset{ margin: 0; padding: 0; border: none; }
+        img { max-width: 18rem; margin: 1rem; box-shadow: silver 1rem 1.5rem 1rem; outline: 2px black solid; }
+    </style>
 </head>
 <body>
 <h3>@epa-wg/custom-element</h3>
-<h6>Declarative Custom Element</h6>
+<h6>Declarative Custom Element devtools plugin</h6>
 <p>
     <b>Transformation</b> tab of DOM inspector shows:
 </p>
-<ul>
-    <li><var>current</var> selected in DOM inspector node</li>
-    <li>Parent <var>customElement</var></li>
-    <li>Declarative Custom Element <var>dce</var> for custom element ^^</li>
-</ul>
-<p>
-    Data source for transformation:
-</p>
-<ul>
-    <li><var>xml-as-object</var> for easier inspection </li>
-    <li><var>xml-string</var> as a string</li>
-    <li><var>xslt</var> as a string</li>
-</ul>
+<div><var>current</var> selected in DOM inspector node</div>
+<div><var>customElement</var>, a parent which renders the selected element </div>
+
+<details>
+    <summary><label><input type="checkbox" id="flatten" >flatten (unfold) <var>template</var> and <var>data</var> object</label></summary>
+    Something small enough to escape casual notice.<br/>
+    <img src="flatten-on.png" alt="flatten on"/>
+    <img src="flatten-off.png" alt="flatten off"/>
+
+</details>
+<fieldset>
+    <legend>Template presentations visibility</legend>
+    <details>
+        <summary><label><input type="checkbox" id="declaration" > <var>declaration</var> DCE properties </label></summary>
+        Declarative Custom Element definition holds the template DOM.
+        <img src="declaration.png" alt="declaration"/>
+    </details>
+    <details>
+        <summary><label><input type="checkbox" id="html" > <var>html</var> string </label></summary>
+        HTML string for Declarative Custom Element body
+        <img src="html.png" alt="HTML string for Declarative Custom Element body"/>
+    </details>
+    <details>
+        <summary><label><input type="checkbox" id="templatedom"> <var>templatedom</var> tree </label></summary>
+        Declarative Custom Element DOM inspector
+        <img src="templatedom.png" alt="Declarative Custom Element DOM inspector"/>
+    </details>
+    <details>
+        <summary><label><input type="checkbox" id="xslt"> <var>xslt</var> string </label></summary>
+        XSLT string for Declarative Custom Element. Copy to clipboard and paste into file for debug in IDE.
+        <img src="xslt.png" alt="XSLT string for Declarative Custom Element"/>
+    </details>
+</fieldset>
+<fieldset>
+    <legend>Data presentations visibility</legend>
+    <details>
+        <summary><label><input type="checkbox" id="datadom"> <var>datadom</var> tree </label></summary>
+        Data inspection tree.
+        <img src="datadom.png" alt="Data inspection tree"/>
+    </details>
+    <details>
+        <summary><label><input type="checkbox" id="xml"> <var>xml</var> string </label></summary>
+        XML string for Declarative Custom Element. Copy to clipboard and paste into file for debug in IDE.
+        <img src="xml.png" alt="XML string for Declarative Custom Element"/>
+    </details>
+
+</fieldset>
 <h3>Debugging</h3>
-<var>xml-string</var> and <var>xslt</var> can be saved to file via for "copy string contents"
+<var>xml</var> and <var>xslt</var> strings can be saved to file via for "copy string contents"
 into clipboard. <br/>
 The XSLT debugger from your favorite IDE can set the breakpoints
 withing those files and run transformation under debugger.
 <br/>
 <br/>
-More info on <a href="https://github.com/EPA-WG/custom-element-chrome-plugin">GitHub repo</a>
+More @ <a href="https://github.com/EPA-WG/custom-element-chrome-plugin">GitHub</a>
 
-<script src="popup.js"></script>
+<script src="about.js"></script>
 </body>
 </html>
