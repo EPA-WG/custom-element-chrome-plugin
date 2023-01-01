@@ -27,9 +27,9 @@ All fields visibility is available in plugin options
 
 ## Data source for transformation
 
-`datadom` for easier inspection
-`xml` as a string
-`xslt` as a string
+* `datadom` for easier inspection
+* `xml` as a string
+* `xslt` as a string
 
 # Debugging
 `xml` and `xslt` can be saved to file via for "_copy string contents_" into clipboard.
