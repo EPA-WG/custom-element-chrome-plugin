@@ -10,8 +10,12 @@ const props =
 
 const getProperties = function( props )
 {
-    const xml2str = x => x?.nodeType ? '<?xml version="1.0" encoding="UTF-8"?>\n'
-                                       + new XMLSerializer().serializeToString( x ) : undefined;
+    const xml2str = x =>
+    {   if( !x?.nodeType )
+            return;
+        const s = new XMLSerializer().serializeToString( x );
+        return s.startsWith( '<?xml' ) ? s : '<?xml version="1.0" encoding="UTF-8"?>\n' + s;
+    };
     const tagNattrs = h => h.substring( 1, h.indexOf( '>' ) )
     const xml2obj = x =>
     {
